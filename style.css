@@ -3,7 +3,7 @@
 body{
   margin: 0;
   font-family:Arial, Helvetica, sans-serif;
-  Background:#333;
+  Background:white;
   Font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
@@ -19,6 +19,7 @@ img{
 h1,h2,h3{
   margin: 0;
   padding:1em 0;
+  text-decoration:underline;
 }
 
 p{
@@ -33,7 +34,7 @@ p{
   color: white;
   text-decoration: none;
   padding: 1em 2em;
-  border: 1px solid #CCAC00;
+  border: 1px solid #b2986c;
   margin: .5em 0;
 }
 
@@ -45,8 +46,9 @@ p{
 /*header*/
 #showcase{
   min-height:450px;
-  color: #fff;
+  color:white;
   text-align: center;
+  background:black;
 }
 
 #showcase .bg-image{
@@ -66,5 +68,94 @@ opacity:0.1;
   padding-bottom:0;
 }
 #showcase .content-wrap{
-  paddiig:0 1.5em;
+  padding:0 1.5em;
+}
+
+
+/*sections */
+
+#section-a{
+background:white;
+color:#b2986c;
+padding-bottom:2em;
+width:100%;
+
+
+}
+
+#section-b{
+  padding:2em 1em 1em;
+}
+#section-b ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#section-b li{
+  margin-bottom: 1em;
+  background:#fff;
+  color:#b2986c;
+}
+
+
+.card-content{
+  padding: 1.5em;
+}
+
+
+#section-c {
+  background:#b2986c;
+  color: white;
+  padding:2em;
+}
+
+
+#section-d .box{
+  padding: 2em;
+  color:#b2986c;
+}
+
+
+section-d .box:first-child{
+  background:#b2986c;
+  
+}
+#main-footer{
+  padding:2em;
+  background:#b2986c;
+  color:#fff;
+  text-align:center;
+}
+
+/*media*/
+@media(min-width:700px){
+.grid{
+  display:grid;
+  grid-template-columns: 1fr repeat(2,minmax(auto,25em)) 1fr; 
+}
+.content-wrap {
+  grid-column: 2/4;
+}
+#section-b ul{
+  grid-column:2/4;
+}
+.box, #main-footer div{
+  grid-column:span 2;
+}
+#section-a .content-text{
+  columns:2;
+  column-gap: 2em; 
+}
+#section-a.content-text p{
+  padding-top:0;
+}
+#section-b ul{
+  display: flex;
+  justify-content: space-around;
+}
+#section-b li{
+  width:31%;
+}
+
 }
