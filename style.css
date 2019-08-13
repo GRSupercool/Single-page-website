@@ -20,6 +20,7 @@ h1,h2,h3{
   margin: 0;
   padding:1em 0;
   text-decoration:underline;
+  color:#b2986c;
 }
 
 p{
@@ -30,7 +31,7 @@ p{
 
 .btn {
   display:inline-block;
-  background: #333;
+  background: #b2986c;
   color: white;
   text-decoration: none;
   padding: 1em 2em;
@@ -129,33 +130,9 @@ section-d .box:first-child{
 }
 
 /*media*/
-@media(min-width:700px){
+@media(min-width:200px){
 .grid{
   display:grid;
-  grid-template-columns: 1fr repeat(2,minmax(auto,25em)) 1fr; 
-}
-.content-wrap {
-  grid-column: 2/4;
-}
-#section-b ul{
-  grid-column:2/4;
-}
-.box, #main-footer div{
-  grid-column:span 2;
-}
-#section-a .content-text{
-  columns:2;
-  column-gap: 2em; 
-}
-#section-a.content-text p{
-  padding-top:0;
-}
-#section-b ul{
-  display: flex;
-  justify-content: space-around;
-}
-#section-b li{
-  width:31%;
-}
+ 
 
-}
+
