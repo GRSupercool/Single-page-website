@@ -4,9 +4,11 @@ body{
   margin: 0;
   font-family:Arial, Helvetica, sans-serif;
   Background:white;
+  color:white;
   Font-size: 1.1em;
   line-height: 1.5;
   text-align: center;
+  
 }
 
 img{
@@ -50,26 +52,42 @@ p{
   color:white;
   text-align: center;
   background:black;
+  background-image: url(img/Header_photo.png);
+  padding-left:70px;
+  height:900px;
+  width:100%;
+  background-size:cover;
+  background-position:right;
+  
 }
 
-#showcase .bg-image{
-  position:absolute;
-  background:#333;
-  background-position:center;
-  background-repeat:norepeat;
-  background-size:cover;
-  width:100%;
-  height:450px;
-z-index:-1;
-opacity:0.1;
-}
 
 #showcase h1{
-  padding-top: 100px;
+  padding-top:30px;
+  font-size:50px;
+  line-height:2em;
   padding-bottom:0;
+  text-align:left;
+  text-decoration:none;
+  color:white;
+}
+#showcase h2{
+  font-size:50px;
+  color:white;
+  text-decoration:none;
+  line-height:0em;
+}
+#showcase h3{
+  font-size:50px;
+  color:white;
+  line-height:0em;
+ 
 }
 #showcase .content-wrap{
   padding:0 1.5em;
+  text-align:left;
+  color:white;
+  
 }
 
 
@@ -80,6 +98,26 @@ background:white;
 color:#b2986c;
 padding-bottom:2em;
 width:100%;
+
+}
+
+
+
+#section-a .content-wrap{
+  padding:0 1.5em;
+  
+
+  
+}
+#section-a .content-text{
+  width:750px;
+  height:750px;
+
+}
+#section-a p{
+  font-size:20px;
+  margin:100px;
+  
 
 
 }
@@ -104,6 +142,7 @@ width:100%;
   padding: 1.5em;
 }
 
+/*Section-c*/
 
 #section-c {
   background:#b2986c;
@@ -130,9 +169,37 @@ section-d .box:first-child{
 }
 
 /*media*/
-@media(min-width:200px){
-.grid{
+@media(min-width:700px){
+#section-b .grid{
   display:grid;
- 
+  grid-template-columns:1fr (2,minmax(auto,25em)) 1fr;
+}
 
+ .content-text p{
+  padding-top:0;
+}
+  .content-wrap,
+   #section-b ul{
+    grid-column:2/4;
 
+  }
+
+ #section-b ul{
+   display:flex;
+   justify-content:space-around;
+ }
+#section-b li{
+  width:31%;
+}
+@media(min-width:700px){
+  #section-a .grid{
+    display:grid;
+   
+
+  }
+  #setion-a p{
+    display:flex;
+    justify-content:space-around;
+  }
+}
+}
