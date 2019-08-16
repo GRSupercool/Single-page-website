@@ -213,3 +213,16 @@ section-d .box:first-child {
     width: 31%;
   }
 }
+
+/*----styles video.html---*/
+
+ #content{
+  display:none;
+}
+
+#authorize-button{
+  display:none;
+}
+#signout-button{
+  display:none;
+}
