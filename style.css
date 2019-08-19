@@ -65,7 +65,7 @@ p {
 
 
 #showcase h1 {
-  padding-top: 30px;
+  padding-top: 50px;
   font-size: 50px;
   line-height: 2em;
   padding-bottom: 0;
@@ -110,7 +110,7 @@ p {
   height: 700px;
   width: 70%;
   display: flex;
-  
+
 }
 
 
@@ -156,9 +156,11 @@ p {
   height: 700px;
   width: 40%;
   margin: 50px;
-  
+  display:flex;
+}
 
-
+#section-c p{
+  width:100%;
 }
 
 #section-c .img {
@@ -194,7 +196,48 @@ section-d .box:first-child {
     grid-template-columns: 1fr (2, minmax(auto, 25em)) 1fr;
   }
 
-  .content-text p {
+ #section-b .content-text p {
+    padding-top: 0;
+  }
+
+  #section-b .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+}
+
+@media(min-with:700px) {
+  #section-a .grid {
+    display: grid;
+    grid-template-columns: 700px;
+  }
+}
+
+.content-text p {
+  padding-top: 0;
+}
+
+#section-a img {
+  grid-column: 2/4;
+}
+
+@media(min-width:700px) {
+  #section-b .grid {
+    display: grid;
+    grid-template-columns: 1fr (2, minmax(auto, 25em)) 1fr;
+  }
+
+  #section-b .content-text p {
     padding-top: 0;
   }
 
@@ -214,15 +257,19 @@ section-d .box:first-child {
   }
 }
 
-/*----styles video.html---*/
-
- #content{
-  display:none;
+@media(min-with:700px) {
+  #section-c .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr
+  }
 }
 
-#authorize-button{
-  display:none;
+#section-c .p {
+  padding-top: 0;
+  display:flex;
+  width:50%;
 }
-#signout-button{
-  display:none;
+
+#section-c img {
+  grid-column: 1/2;
 }
