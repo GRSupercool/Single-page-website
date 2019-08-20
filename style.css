@@ -11,6 +11,91 @@ body {
 
 }
 
+.navbar{
+  position:absolute;
+  right: 0px;
+  width:260px;
+  height:100%;
+  background-color:white;
+  text-align:center;
+  transition:0.800s ease;
+}
+
+.navbar > .side-nav{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+
+}
+.nav-item{
+  display:flex;
+}
+.nav-item > .nav-link{
+  text-decoration: none;
+  color:#b2986c;
+  font-size:1.1em;
+  padding:1em;
+  flex:1;
+}
+.nav-item > .nav-link:hover{
+  background-color:white;
+  color:#b2986c;
+}
+.toggle-collapse{
+  float:left;
+  margin-left:-3.3em;
+  margin-top: .5em;
+  outline:inherit;
+  border:0px;
+  background:transparent;
+}
+.toggle-icon,
+.togge-icon::before,
+toggle::after{
+  width:30px;
+  height:3px;
+  position:fixed;
+  background:white;
+  border-radius:2em;
+  border:1px solid #b2986c;
+  cursor:pointer;
+  transition:0.800s ease;
+  margin-top:0.8em;
+}
+.toggle-icon::before{
+  position:absolute;
+  left:-1px;
+  margin-top:-0.8em;
+}
+.toggle-icon::after{
+  position:absolute;
+  left:-1px;
+  margin-top:0.6em;
+  width:20px;
+}
+.toggle-icon{
+  width:15px;
+}
+.show .toggle-icon::after{
+  width:30px;
+}
+.show .toggle-icon{
+  width:30px;
+}
+.nav-item > .website{
+  text-decoration:none;
+  padding:1.3em;
+  font-size:2em;
+  color:#b2986c;
+}
+.nav-item:last-child > .nav-link i{
+  padding: .5em;
+
+}
+.nav-item:hover:last-child .nav-link{
+  background-color:black;
+  color:white;
+}
 img {
   display: block;
   height: auto;
@@ -108,7 +193,7 @@ p {
 
 #section-a .content-text {
   height: 700px;
-  width: 70%;
+  width: 100%;
   display: flex;
 
 }
